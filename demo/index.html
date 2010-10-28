@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<title>ExDate+Datejs demo</title> 
+<script type="text/javascript" src="http://getfirebug.com/releases/lite/latest/firebug-lite.js"></script>
+<script type="text/javascript" src="../src/ExDate.js"></script>
+<script type="text/javascript" >
+originalDate = Date;
+Date = ExDate;
+</script>
+<script type="text/javascript" src="./js/datejs/globalization/en-US.js"></script>
+<script type="text/javascript" src="./js/datejs/core.js"></script>
+<script type="text/javascript" src="./js/datejs/extras.js"></script>
+<script type="text/javascript" src="./js/datejs/parser.js"></script>
+<script type="text/javascript" src="./js/datejs/time.js"></script>
+<script type="text/javascript" src="./js/datejs/sugarpak.js"></script>
+<script type="text/javascript" >
+Date = originalDate;
+</script>
+</head><body> 
+<div>
+右下の蛍をクリックしてFirebugLiteから、以下のコードを実行してみよう。<br>
+また、<a href="http://code.google.com/p/datejs/wiki/APIDocumentation">Datejsのドキュメント</a>に書かれている機能がExDateで使えることも試そう。<br>
+<span>ExDate.today().next().thursday().toString();</span>
+</div>
+</body></html>
